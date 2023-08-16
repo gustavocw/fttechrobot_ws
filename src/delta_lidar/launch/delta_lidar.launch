@@ -1,0 +1,7 @@
+<launch>
+  <node name="delta_lidar"    pkg="delta_lidar"  type="delta_lidar_node" output="screen">
+  <param name="serial_port"         type="string" value="/tmp/robot_ttyUSB0"/>
+  <param name="inverted"            type="bool"   value="false"/>
+  <param name="frame_id"            type="string" value="laser"/>
+  </node>
+</launch>

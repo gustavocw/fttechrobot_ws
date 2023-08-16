@@ -1,0 +1,2 @@
+delta_lidar:fttech_msgs:fttech_pid:fttech_udev:fttechobot:imu_calib
+-DCATKIN_DEVEL_PREFIX=/home/gordhacker/fttechrobot_ws/devel -DCMAKE_INSTALL_PREFIX=/home/gordhacker/fttechrobot_ws/install -G Unix Makefiles

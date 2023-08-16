@@ -1,0 +1,15 @@
+<launch>
+    <!-- Map server -->
+    <arg name="map_file" default="$(find fttechrobot)/maps/mapfttech.yaml"/>
+    <node pkg="map_server" name="map_server"  type="map_server" args="$(arg map_file)" />
+
+    <!-- AMCL used for localization -->
+    <include file="$(find fttechrobot)/launch/include/amcl.launch" />
+    
+    <!-- Calls navigation stack packages for compatible fttechrobot base -->
+    <!-- Takes reference from env variable fttechBASE. ie. export fttechBASE=2wd -->
+    <include file="$(find fttechrobot)/launch/include/move_base/move_base_mecanum.launch" />
+
+    <!-- Add RViz node -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find fttechrobot)/rviz/navigate.rviz" required="true"/>
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/gordhacker/fttechrobot_ws/devel
+
+Name: fttech_msgs
+Description: Description of fttech_msgs
+Version: 0.0.1
+Cflags: -I/home/gordhacker/fttechrobot_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime std_msgs geometry_msgs

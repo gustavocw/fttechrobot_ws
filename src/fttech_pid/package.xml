@@ -1,0 +1,18 @@
+<package format="2">
+    <name>fttech_pid</name>
+    <version>0.0.1</version>
+    <description>fttech_robot PID dynamic_reconfigure</description>
+    <author>Gord Cost</author>
+    <maintainer email="costawebpt@gmail.com">Juan Jimeno</maintainer>
+    <license>BSD</license>
+
+    <buildtool_depend>catkin</buildtool_depend>
+    <build_depend>message_generation</build_depend>
+    <exec_depend>message_runtime</exec_depend>
+
+    <depend>dynamic_reconfigure</depend>
+    <depend>roscpp</depend>
+    <depend>rospy</depend>
+    <depend>std_msgs</depend>
+    <depend>fttech_msgs</depend>
+</package>

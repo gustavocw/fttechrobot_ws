@@ -1,0 +1,4 @@
+- git:
+    local-name: fttech_pid
+    uri: 'https://github.com/grassjelly/fttech_pid.git
+    version: indigo

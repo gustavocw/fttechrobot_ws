@@ -1,0 +1,8 @@
+prefix=/home/gordhacker/fttechrobot_ws/install
+
+Name: fttechrobot
+Description: Description of fttechrobot
+Version: 1.4.1
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lfttechrobot
+Requires: roscpp rospy tf2 tf2_ros nav_msgs fttech_msgs geometry_msgs sensor_msgs std_msgs

@@ -1,0 +1,8 @@
+prefix=/home/gordhacker/fttechrobot_ws/devel
+
+Name: fttech_pid
+Description: Description of fttech_pid
+Version: 0.0.1
+Cflags: -I/home/gordhacker/fttechrobot_ws/devel/include -I/home/gordhacker/fttechrobot_ws/src/fttech_pid/include
+Libs: -L${prefix}/lib 
+Requires: dynamic_reconfigure message_runtime roscpp std_msgs fttech_msgs
