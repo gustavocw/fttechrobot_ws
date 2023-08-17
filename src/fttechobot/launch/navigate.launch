@@ -1,4 +1,8 @@
 <launch>
+    <!-- Load robot description (URDF) to parameter server -->
+    <!-- <param name="robot_description" textfile="$(find fttechrobot)/urdf/fttechrobot.urdf"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" /> -->
+
     <!-- Map server -->
     <arg name="map_file" default="$(find fttechrobot)/maps/mapfttech.yaml"/>
     <node pkg="map_server" name="map_server"  type="map_server" args="$(arg map_file)" />

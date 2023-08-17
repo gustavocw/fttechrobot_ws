@@ -28,7 +28,7 @@
 #include "Encoder.h"
 
 #define IMU_PUBLISH_RATE 20 //hz
-#define COMMAND_RATE 20 //hz
+#define COMMAND_RATE 50 //hz
 #define DEBUG_RATE 5
 
 Encoder motor1_encoder(MOTOR1_ENCODER_A, MOTOR1_ENCODER_B, COUNTS_PER_REV);
@@ -87,7 +87,7 @@ void setup()
     {
         nh.spinOnce();
     }
-    nh.loginfo("fttechBASE CONNECTED");
+    nh.loginfo("FTTECHBASE CONNECTED");
     delay(1);
 }
 
@@ -106,7 +106,7 @@ void loop()
     }
 
     //this block stops the motor when no command is received
-    if ((millis() - g_prev_command_time) >= 400)
+    if ((millis() - g_prev_command_time) >= 200)
     {
         stopBase();
     }
